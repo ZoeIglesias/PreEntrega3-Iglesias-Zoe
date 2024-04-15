@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*Estilo de fuente para el titulo*/
+@import url('https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+.container-principal {
+    background-color: rgba(255, 255, 0, 0.269); /* Color de fondo para el documento */
+}
+.title-container{
+    background-color: rgba(255, 255, 0, 0.986);
+    max-width: 800%;
+}
+
+.user-container {
+    background-color:  rgba(255, 255, 0, 0.514);
+}
+
+.movie-container{
+    /*background-color:  rgba(255, 255, 0, 0.514);*/
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 0 20px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto;    
+}
+
+.titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: -40px;
+    margin-top: 55px;
+}
+
+.texto{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+}
+
+.search-form .search-input{
+    border-radius: 50px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-color: rgba(5, 5, 5, 0.311);
+}
+
+.search-input::-webkit-search-cancel-button { /*Para borrar la 'x'*/
+    -webkit-appearance: none;
+}
+.search-input:focus {
+    outline: none;
+    border-color: black; 
+    box-shadow: none !important; 
+    caret-color: black; 
+}
+
+.search-form .search-button{
+    border: 0cap;
+    position: absolute;
+    margin-left: 165px;
+}
+/*-----------------INICIO----------------------------*/
+.formulario-inicio{
+    max-width: 300px;
+    margin-top: 13px !important;
+    margin-left: 15px !important;
+}
+
+.btn-inicio{
+    margin-top: 15px;
+    margin-left: 20px !important;
+}
+/*--------------------------------------------------*/
+/*MODIFICAR*/
+.avisoNoHayPelicula{
+    background-color:  rgba(143, 247, 219, 0.921); /* Color de fondo semitransparente violeta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    position: fixed; 
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    
+}
+
+.aviso{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    /*color: red;*/
+    text-align:center;
+    
+}
+/*----------------------------------------------------------------*/
+.btn-primary{
+    background-color: rgba(255, 255, 0, 0.742) !important;
+    color: black !important;
+    border-color: rgb(8, 8, 0) !important;
+    font-family: "Bebas Neue", sans-serif !important;
+}
+.btn-log{
+        /*margin-left: 45px;*/
+        font-size: 20px; 
+        border-radius: 10px;
+        background-color: yellow;
+        color: rgb(17, 1, 1);
+}
+/*----------------------------------------------------------------*/
+.pelicula{
+    position: relative;
+    text-align: center;
+}
+
+.img-fluid:hover{
+    opacity: 0.3;
+    transform: scale(1.1); /* Ajusta el valor de escala según sea necesario */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.titulo-pelicula {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+   
+}
+
+.secuencia{
+    display: none; 
+    position: absolute; 
+    top: 0px;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+
+.pelicula:hover .secuencia{/*Aprezca el titulo cuando nos posicionamos sobre la img*/
+    display: block; 
+}
+
+.pelicula:hover .genero-pelicula{ /*Desaparezcan los generos cuando nos posicionamos sobre la img*/
+    display: none;
+}
+
+/*.buttons-container {
+    display: flex; /* Utilizar flexbox 
+  }*/
+
+.btn-home{
+    font-size: 25px; 
+    /*border: none; */
+    border-radius: 50px;
+    color:black;
+}
+
+.btn-like{
+    /*margin-left: 45px;*/
+    font-size: 35px; 
+    border: none; 
+    background: none; 
+    color: white;
+}
+.btn-like:hover{
+ 
+  transform: scale(1.5); 
+    transition: transform 0.3s ease; 
+}
+
+.corazon-activo {
+    color: red;
+}
